@@ -1,30 +1,39 @@
 function animationMain() {
 
-    splt({});
+ // splt({ reveal: true });
+
+ Splitting();
+
+
+    const reveal = document.querySelectorAll(".char");
     
-    gsap.from(".char", {
-      y: 100,
-      duration: .5,
-      stagger: .03,
-      ease: Power4,
+    gsap.from(reveal, {
+      y: "100%",
+      duration: .6,
+      stagger: .05,
+      ease: Power3,
       scrollTrigger: {
         scroller: ".scrollContainer",
-        trigger: ".splt",
+        trigger: ".word",
         start: "top 80%",
       }
     })
 
-    gsap.from(".fadeIn", {
-        opacity: 0,
-        y: 30,
-        duration: 1,
-        ease: Power4,
-        scrollTrigger: {
+    const fadeIn = gsap.utils.toArray('.fadeIn');
+
+      fadeIn.forEach(fadeInItem => {
+        gsap.from(fadeInItem, { 
+          opacity: 0,
+          y: 80,
+          duration: 1,
+          scrollTrigger: {
             scroller: ".scrollContainer",
-            trigger: ".fadeIn",
-            start: "top 80%",
+            trigger: fadeInItem,
+            start: "top 90%",
           }
     })
-    
+
+
+});
 
 }

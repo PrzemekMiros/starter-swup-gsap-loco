@@ -1,15 +1,25 @@
 </main>
 </div>
+<div class="grid">
+  <div class="container">
+    <div class="row gx-0">
+      <div class="col-md-1 grid-item"></div>
+      <div class="col-md-5 grid-item"></div>
+      <div class="col-md-1 grid-item"></div>
+      <div class="col-md-4 grid-item"></div>
+      <div class="col-md-1 grid-item"></div>
+    </div>
+  </div>
+</div>
 <!-- Scripts -->
 <script src="/assets/js/vendor.js"></script>
 <script src="/assets/js/script.js"></script>
 
 <script>
-
-// Init locomotive
+  // Init locomotive
   const locoScroll = new LocomotiveScroll({
-  el: document.querySelector(".scrollContainer"),
-  smooth: true,
+    el: document.querySelector(".scrollContainer"),
+    smooth: true,
     reloadOnContextChange: !0,
     multiplier: .45,
     lerp: .095,
@@ -20,47 +30,55 @@
     smartphone: {
       smooth: !0
     }
-}); 
+  });
 
-locoScroll.on("scroll", ScrollTrigger.update);
+  locoScroll.on("scroll", ScrollTrigger.update);
 
-// tell ScrollTrigger to use these proxy methods for the ".smooth-scroll" element since Locomotive Scroll is hijacking things
-ScrollTrigger.scrollerProxy(".scrollContainer", {
-      	scrollTop(value) {
-    			return arguments.length ? locoScroll.scrollTo(value, 0, 0) : 		locoScroll.scroll.instance.scroll.y;
-  }, // we don't have to define a scrollLeft because we're only scrolling vertically.
-  getBoundingClientRect() {
-    return {top: 0, left: 0, width: window.innerWidth, height: window.innerHeight};
-  },
-  // LocomotiveScroll handles things completely differently on mobile devices - it doesn't even transform the container at all! So to get the correct behavior and avoid jitters, we should pin things with position: fixed on mobile. We sense it by checking to see if there's a transform applied to the container (the LocomotiveScroll-controlled element).
-  pinType: document.querySelector(".scrollContainer").style.transform ? "transform" : "fixed"
-});
+  // tell ScrollTrigger to use these proxy methods for the ".smooth-scroll" element since Locomotive Scroll is hijacking things
+  ScrollTrigger.scrollerProxy(".scrollContainer", {
+    scrollTop(value) {
+      return arguments.length ? locoScroll.scrollTo(value, 0, 0) : locoScroll.scroll.instance.scroll.y;
+    }, // we don't have to define a scrollLeft because we're only scrolling vertically.
+    getBoundingClientRect() {
+      return {
+        top: 0,
+        left: 0,
+        width: window.innerWidth,
+        height: window.innerHeight
+      };
+    },
+    // LocomotiveScroll handles things completely differently on mobile devices - it doesn't even transform the container at all! So to get the correct behavior and avoid jitters, we should pin things with position: fixed on mobile. We sense it by checking to see if there's a transform applied to the container (the LocomotiveScroll-controlled element).
+    pinType: document.querySelector(".scrollContainer").style.transform ? "transform" : "fixed"
+  });
 
-// each time the window updates, we should refresh ScrollTrigger and then update LocomotiveScroll. 
-ScrollTrigger.addEventListener("refresh", () => locoScroll.update());
+  // each time the window updates, we should refresh ScrollTrigger and then update LocomotiveScroll. 
+  ScrollTrigger.addEventListener("refresh", () => locoScroll.update());
 
-// after everything is set up, refresh() ScrollTrigger and update LocomotiveScroll because padding may have been added for pinning, etc.
-ScrollTrigger.refresh();
+  // after everything is set up, refresh() ScrollTrigger and update LocomotiveScroll because padding may have been added for pinning, etc.
+  ScrollTrigger.refresh();
 
 
-// Swup init
-const swup = new Swup({
-      animateHistoryBrowsing: true,
-      plugins: [
-        new SwupProgressPlugin(),
-        new SwupBodyClassPlugin()
-      ]
-});
+  // Swup init
+  const swup = new Swup({
+    animateHistoryBrowsing: true,
+    plugins: [
+      new SwupProgressPlugin(),
+      new SwupBodyClassPlugin()
+    ]
+  });
 
-// Swup events re-init scripts
-document.addEventListener("swup:animationInStart", () => {
+  // Swup events re-init scripts
+  document.addEventListener("swup:animationInStart", () => {
     locoScroll.destroy(), locoScroll.init()
-})
+  })
 
-document.addEventListener("swup:animationInDone", () => {
+  document.addEventListener("swup:animationInDone", () => {
     animationMain()
-}), console.clear();
+  }), console.clear();
 </script>
-<script> animationMain(); </script>
+<script>
+  animationMain();
+</script>
 </body>
+
 </html>
