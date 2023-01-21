@@ -1,11 +1,13 @@
-# starter-swup-gsap-loco
+# Starter-swup-gsap-loco
 
 Eleventy static site generator
 
 Swup.js page transtion
 
+Locomotive scroll
+
 Gsap animation
 
-Locomotive scroll
+## Run project
 
 npm start
