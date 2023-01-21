@@ -1,0 +1,21 @@
+.transition-fade {
+    transform: translateY(0);
+    transition: 0.2s ease-in;
+    opacity: 1;
+  }
+  
+  html.is-animating .transition-fade {
+    transform: translateY(60px);
+    opacity: 0;
+  }
+  
+  html.is-rendering .transition-fade {
+    transform: translateY(0);
+    opacity: 0;
+  }
+  
+  .swup-progress-bar {
+    height: 14px;
+    background-color: blue;
+  }
+  
