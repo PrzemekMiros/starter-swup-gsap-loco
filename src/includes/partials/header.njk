@@ -1,81 +1,141 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>Eleventy Starter - Gsap | Locomotive | Swup</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/css/bootstrap-grid.min.css" integrity="sha512-Aa+z1qgIG+Hv4H2W3EMl3btnnwTQRA47ZiSecYSkWavHUkBF2aPOIIvlvjLCsjapW1IfsGrEO3FU693ReouVTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/css/bootstrap-grid.min.css"
+    integrity="sha512-Aa+z1qgIG+Hv4H2W3EMl3btnnwTQRA47ZiSecYSkWavHUkBF2aPOIIvlvjLCsjapW1IfsGrEO3FU693ReouVTA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | url }}">
 </head>
+
 <body class="page-{% if page.fileSlug %}{{ page.fileSlug }}{% else %}home{% endif %}">
 
-<div class="scrollContainer" id="pinSection">
+  <div class="scrollContainer" id="pinSection">
+
     <header>
       <div class="container" data-scroll-sticky data-scroll-target="#pinSection">
         <div class="row gx-0">
-          <div class="col-md-1">
-            <div class="logo-wrap">        
+          <div class="col-1">
+            <div class="logo-wrap">
               <a href="/">
-              <svg class="logo" width="568" height="273" viewBox="0 0 568 273" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <g clip-path="url(#clip0_2675_2)">
-              <rect width="568" height="273" fill="white"/>
-              <rect class="logo-line" x="92" y="-177" width="17" height="633" fill="black"/>
-              <rect class="logo-line" x="144" y="-177" width="12" height="633" fill="black"/>
-              <rect class="logo-line" x="116" y="-177" width="6" height="633" fill="black"/>
-              <rect class="logo-line" x="128" y="-177" width="9" height="633" fill="black"/>
-              <rect class="logo-line" width="8" height="632" transform="matrix(-1 0 0 1 196 -184)" fill="black"/>
-              <rect class="logo-line" width="7" height="632" transform="matrix(-1 0 0 1 167 -184)" fill="black"/>
-              <rect class="logo-line" x="-13" y="-182" width="17" height="633" fill="black"/>
-              <rect class="logo-line" x="35" y="-182" width="14" height="633" fill="black"/>
-              <rect class="logo-line" x="7" y="-182" width="8" height="633" fill="black"/>
-              <rect class="logo-line" x="21" y="-182" width="8" height="633" fill="black"/>
-              <rect class="logo-line" width="9" height="634" transform="matrix(-1 0 0 1 87 -189)" fill="black"/>
-              <rect class="logo-line" width="7" height="634" transform="matrix(-1 0 0 1 59 -189)" fill="black"/>
-              <rect class="logo-line" width="1" height="634" transform="matrix(-1 0 0 1 73 -189)" fill="black"/>
-              <rect class="logo-line" width="4" height="634" transform="matrix(-1 0 0 1 67 -189)" fill="black"/>
-              <rect class="logo-line" width="16" height="633" transform="matrix(-1 0 0 1 511 -177)" fill="black"/>
-              <rect class="logo-line" width="13" height="633" transform="matrix(-1 0 0 1 459 -177)" fill="black"/>
-              <rect class="logo-line" width="12" height="633" transform="matrix(-1 0 0 1 433 -181)" fill="black"/>
-              <rect class="logo-line" width="6" height="633" transform="matrix(-1 0 0 1 487 -177)" fill="black"/>
-              <rect class="logo-line" width="9" height="633" transform="matrix(-1 0 0 1 474 -177)" fill="black"/>
-              <rect class="logo-line" x="408" y="-184" width="8" height="632" fill="black"/>
-              <rect class="logo-line" x="436" y="-184" width="6" height="632" fill="black"/>
-              <rect class="logo-line" width="15" height="643" transform="matrix(-1 0 0 1 358 -182)" fill="black"/>
-              <rect class="logo-line" width="13" height="643" transform="matrix(-1 0 0 1 184 -186)" fill="black"/>
-              <rect class="logo-line" width="8" height="643" transform="matrix(-1 0 0 1 393 -182)" fill="black"/>
-              <rect class="logo-line" width="6" height="643" transform="matrix(-1 0 0 1 404 -182)" fill="black"/>
-              <rect class="logo-line" width="9" height="643" transform="matrix(-1 0 0 1 379 -182)" fill="black"/>
-              <rect class="logo-line" x="297" y="-189" width="10" height="645" fill="black"/>
-              <rect class="logo-line" x="331" y="-189" width="6" height="645" fill="black"/>
-              <rect class="logo-line" x="361" y="-189" width="6" height="645" fill="black"/>
-              <rect class="logo-line" x="311" y="-189" width="4" height="645" fill="black"/>
-              <rect class="logo-line" x="320" y="-189" width="5" height="645" fill="black"/>
-              <rect class="logo-line" width="14" height="632" transform="matrix(-1 0 0 1 255 -171)" fill="black"/>
-              <rect class="logo-line" width="6" height="632" transform="matrix(-1 0 0 1 281 -171)" fill="black"/>
-              <rect class="logo-line" width="7" height="632" transform="matrix(-1 0 0 1 292 -171)" fill="black"/>
-              <rect class="logo-line" width="9" height="632" transform="matrix(-1 0 0 1 269 -171)" fill="black"/>
-              <rect class="logo-line" x="201" y="-177" width="9" height="633" fill="black"/>
-              <rect class="logo-line" x="230" y="-177" width="7" height="633" fill="black"/>
-              <rect class="logo-line" x="215" y="-177" width="1" height="633" fill="black"/>
-              <rect class="logo-line" x="220" y="-177" width="5" height="633" fill="black"/>
-              <rect class="logo-line" width="12" height="633" transform="matrix(-1 0 0 1 569 -182)" fill="black"/>
-              <rect class="logo-line" x="518" y="-189" width="7" height="634" fill="black"/>
-              <rect class="logo-line" x="546" y="-189" width="6" height="634" fill="black"/>
-              <rect class="logo-line" x="530" y="-189" width="3" height="634" fill="black"/>
-              <rect class="logo-line" x="537" y="-189" width="4" height="634" fill="black"/>
-              </g>
-              <defs>
-              <clipPath id="clip0_2675_2">
-              <rect width="568" height="273" fill="white"/>
-              </clipPath>
-              </defs>
-            </svg> 
-              </a>  
+                <svg class="logo" width="568" height="273" viewBox="0 0 568 273" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_2675_2)">
+                    <rect width="568" height="273" fill="white" />
+                    <rect class="logo-line" x="92" y="-177" width="17" height="633" fill="black" />
+                    <rect class="logo-line" x="144" y="-177" width="12" height="633" fill="black" />
+                    <rect class="logo-line" x="116" y="-177" width="6" height="633" fill="black" />
+                    <rect class="logo-line" x="128" y="-177" width="9" height="633" fill="black" />
+                    <rect class="logo-line" width="8" height="632" transform="matrix(-1 0 0 1 196 -184)" fill="black" />
+                    <rect class="logo-line" width="7" height="632" transform="matrix(-1 0 0 1 167 -184)" fill="black" />
+                    <rect class="logo-line" x="-13" y="-182" width="17" height="633" fill="black" />
+                    <rect class="logo-line" x="35" y="-182" width="14" height="633" fill="black" />
+                    <rect class="logo-line" x="7" y="-182" width="8" height="633" fill="black" />
+                    <rect class="logo-line" x="21" y="-182" width="8" height="633" fill="black" />
+                    <rect class="logo-line" width="9" height="634" transform="matrix(-1 0 0 1 87 -189)" fill="black" />
+                    <rect class="logo-line" width="7" height="634" transform="matrix(-1 0 0 1 59 -189)" fill="black" />
+                    <rect class="logo-line" width="1" height="634" transform="matrix(-1 0 0 1 73 -189)" fill="black" />
+                    <rect class="logo-line" width="4" height="634" transform="matrix(-1 0 0 1 67 -189)" fill="black" />
+                    <rect class="logo-line" width="16" height="633" transform="matrix(-1 0 0 1 511 -177)"
+                      fill="black" />
+                    <rect class="logo-line" width="13" height="633" transform="matrix(-1 0 0 1 459 -177)"
+                      fill="black" />
+                    <rect class="logo-line" width="12" height="633" transform="matrix(-1 0 0 1 433 -181)"
+                      fill="black" />
+                    <rect class="logo-line" width="6" height="633" transform="matrix(-1 0 0 1 487 -177)" fill="black" />
+                    <rect class="logo-line" width="9" height="633" transform="matrix(-1 0 0 1 474 -177)" fill="black" />
+                    <rect class="logo-line" x="408" y="-184" width="8" height="632" fill="black" />
+                    <rect class="logo-line" x="436" y="-184" width="6" height="632" fill="black" />
+                    <rect class="logo-line" width="15" height="643" transform="matrix(-1 0 0 1 358 -182)"
+                      fill="black" />
+                    <rect class="logo-line" width="13" height="643" transform="matrix(-1 0 0 1 184 -186)"
+                      fill="black" />
+                    <rect class="logo-line" width="8" height="643" transform="matrix(-1 0 0 1 393 -182)" fill="black" />
+                    <rect class="logo-line" width="6" height="643" transform="matrix(-1 0 0 1 404 -182)" fill="black" />
+                    <rect class="logo-line" width="9" height="643" transform="matrix(-1 0 0 1 379 -182)" fill="black" />
+                    <rect class="logo-line" x="297" y="-189" width="10" height="645" fill="black" />
+                    <rect class="logo-line" x="331" y="-189" width="6" height="645" fill="black" />
+                    <rect class="logo-line" x="361" y="-189" width="6" height="645" fill="black" />
+                    <rect class="logo-line" x="311" y="-189" width="4" height="645" fill="black" />
+                    <rect class="logo-line" x="320" y="-189" width="5" height="645" fill="black" />
+                    <rect class="logo-line" width="14" height="632" transform="matrix(-1 0 0 1 255 -171)"
+                      fill="black" />
+                    <rect class="logo-line" width="6" height="632" transform="matrix(-1 0 0 1 281 -171)" fill="black" />
+                    <rect class="logo-line" width="7" height="632" transform="matrix(-1 0 0 1 292 -171)" fill="black" />
+                    <rect class="logo-line" width="9" height="632" transform="matrix(-1 0 0 1 269 -171)" fill="black" />
+                    <rect class="logo-line" x="201" y="-177" width="9" height="633" fill="black" />
+                    <rect class="logo-line" x="230" y="-177" width="7" height="633" fill="black" />
+                    <rect class="logo-line" x="215" y="-177" width="1" height="633" fill="black" />
+                    <rect class="logo-line" x="220" y="-177" width="5" height="633" fill="black" />
+                    <rect class="logo-line" width="12" height="633" transform="matrix(-1 0 0 1 569 -182)"
+                      fill="black" />
+                    <rect class="logo-line" x="518" y="-189" width="7" height="634" fill="black" />
+                    <rect class="logo-line" x="546" y="-189" width="6" height="634" fill="black" />
+                    <rect class="logo-line" x="530" y="-189" width="3" height="634" fill="black" />
+                    <rect class="logo-line" x="537" y="-189" width="4" height="634" fill="black" />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_2675_2">
+                      <rect width="568" height="273" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </a>
             </div>
+          </div>
+          <div class="col-11 d-flex justify-content-end">
+            <button class="menu-toggle" id="menuToggle">
+              <svg viewBox="0 0 12 10" class="hamburger" height="40px" width="40px">
+                <path d="M10,2 L2,2" class="bar-1"></path>
+                <path d="M2,5 L10,5" class="bar-2"></path>
+              </svg>
+            </button>
           </div>
         </div>
       </div>
     </header>
-  <main id="swup" class="transition-fade">
+
+    <main id="swup" class="transition-fade">
+      <section class="fullpage-menu">
+        <div class="fullpage-menu-inner container" data-scroll-sticky data-scroll-target="#pinSection">
+          <div class="menu-bg">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+
+          <div class="row w-100">
+            <div class="offset-md-1 col-md-9">
+              <nav>
+                <ul class="main-menu">
+                  <li><a href="/">Home</a></li>
+                  <li><a href="/portfolio/">About</a></li>
+                  <li><a href="">Work</a></li>
+                  <li><a href="">Contact</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+
+          <div class="header-nav-footer">
+            <div class="container">
+              <div class="row">
+                <div class="offset-md-1 col-md-11">
+                  <ul class="social-links">
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li>&copy;2021</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>

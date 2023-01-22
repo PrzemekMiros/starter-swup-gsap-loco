@@ -1,14 +1,132 @@
 
-header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    mix-blend-mode: difference;
-    z-index: 1
+header{
+  position: fixed;
+  left: 0;
+  top: 2em;
+  width: 100%;
+  z-index: 999
+}
+
+.logo-wrap svg {
+  width: 100%;
+  height: auto;
+}
+
+.menu-toggle{
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.hamburger path{
+  fill: none;
+  stroke: #111;
+  stroke-linecap: round;
+}
+
+.fullpage-menu{
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  display: none;
+  z-index: 99
+}
+.fullpage-menu-inner{
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding-top: 2em
+}
+.menu-bg{
+  display: flex;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 99
+}
+.menu-bg span{
+  width: 33.334%;
+  height: 100%;
+  background: #161616;
+  display: block;
+}
+
+nav{
+  position: relative;
+  z-index: 999;
+}
+
+nav ul {
+  padding-left: 0;
+  list-style-type: none;
+}
+nav li{
+  width: max-content;
+  overflow: hidden;
+  transition: transform 300ms ease-in-out 0s;
+}
+nav li + li{
+  margin-top: 20px;
+}
+nav li a{
+  font-size: 80px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+  display: inline-block;
+  line-height: 1;
+}
+nav li:hover{
+  transform: translateX(50px);
+}
+.header-nav-footer{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 60px;
+  z-index: 999
+}
+.social-links{
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  padding-left: 0;
+  width: 100%;
+}
+.social-links li{
+  font-size: 18px;
+  font-weight: 500;
+  color: #fff
+}
+.social-links li + li{
+  margin-left: 16px;
+}
+.social-links li:last-child{
+  margin-left: auto;
+}
+.social-links a{
+  color: #ffffff;
+  text-decoration: none;
+}
+
+@media screen and (max-width:767px) {
+  .header-row, .header-nav-footer{
+      padding: 30px;
   }
-  
-  .logo {
-    width: 100%;
-    height: auto
+  .fullpage-menu-inner{
+      padding: 70px 30px;
   }
+  nav li a{
+      font-size: 54px;
+  }
+  .social-links li{
+      font-size: 16px;
+  }
+}

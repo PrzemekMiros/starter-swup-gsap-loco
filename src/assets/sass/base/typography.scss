@@ -35,6 +35,20 @@ p, .paragraph {
 
 @media(min-width:1200px) {
   .xl {
+    font-size: 130px
+  }
+  
+  h1, .h1 {
+      font-size: 100px
+    }
+    
+  h2, .h2 {
+    font-size: 70px
+  }
+}
+
+@media(min-width:1400px) {
+  .xl {
     font-size: 150px
   }
   
