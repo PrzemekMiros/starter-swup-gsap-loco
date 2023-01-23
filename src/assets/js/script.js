@@ -98,7 +98,7 @@ tl.from('.main-menu li a', {
 	duration:1.5,
 	y:"100%",
 	stagger: 0.2,
-	ease: 'Expo.easeInOut'
+	ease: Power4. easeOut,
 } , "-=0.5");
 
 tl.from('.social-links li', {
@@ -106,7 +106,7 @@ tl.from('.social-links li', {
 	y:"-100%",
 	opacity:0,
 	stagger: 0.1,
-	ease: 'Expo.easeInOut'
+	ease: Power4. easeOut,
 } , "-=0.5");
 
 tl.reverse();
