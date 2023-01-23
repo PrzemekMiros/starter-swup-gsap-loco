@@ -7,6 +7,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: var(--color-light-1);
+    color: var(--color-text);
     font-family: "Syne", sans-serif
   }
 
@@ -38,9 +39,16 @@ body {
 
   .grid-item {
     height: 100vh;
-    border-left: 1px solid #2222;
+    border-left: 1px solid var(--color-dark-1);
+    opacity: .05
   }
 
 .w-100 {
   width: 100%
+}
+
+@media(min-width:767px) {
+  html {
+    overflow-y: hidden
+  }
 }

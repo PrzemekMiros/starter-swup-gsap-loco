@@ -4,11 +4,11 @@ title: Ciekawostki
 description: Porady i ciekawostki dotyczące tworzenia stron, pozycjonowania i digital marketingu
 pagination: 
     data: collections.posts
-    size: 9
+    size: 6
     alias: blog
 ---
 
-<div class="row gx-0">
+<div class="row gx-0 pb-xsmall">
     <div class="offset-md-1 col-md-9">
         <h1 class="xl" data-splitting>
             {{ title }}
@@ -36,6 +36,8 @@ pagination:
     {% endfor %}
 </div>
 
+<div class="row gx-0">
+<div class="offset-md-1 col-md-5">
 <nav>
     <ul class="pagination d-flex">
         {%- for pageEntry in pagination.pages %}
@@ -46,3 +48,5 @@ pagination:
         {%- endfor %}
     </ul>
 </nav>
+</div>
+</div>

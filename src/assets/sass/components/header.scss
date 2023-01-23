@@ -20,7 +20,7 @@
 
 .hamburger path {
   fill: none;
-  stroke: #111;
+  stroke: var(--color-dark-1);
   stroke-linecap: round;
 }
 
@@ -50,7 +50,7 @@
 .menu-bg span {
   width: 33.3%;
   height: 100%;
-  background: #161616;
+  background: #5323ff;
   display: block;
 }
 
@@ -63,25 +63,22 @@
   padding-left: 0;
   list-style-type: none;
 }
-.main-menu li{
-  margin-bottom: 1em;
+.main-menu li {
+  margin-bottom: 2em;
   width: max-content;
   overflow: hidden;
-  transition: transform 300ms ease-in-out 0s;
-}
-.main-menu li + li{
-  margin-top: 20px;
+  transition: transform .3s ease-in-out 0s;
 }
 .main-menu li a {
-  font-size: 65px;
+  font-size: 60px;
   color: #fff;
   text-decoration: none;
-  font-weight: 700;
+  font-weight: 600;
   display: inline-block;
   line-height: 1;
 }
 .main-menu li:hover{
-  transform: translateX(50px);
+  transform: translateX(50px)
 }
 .header-nav-footer{
   position: absolute;
