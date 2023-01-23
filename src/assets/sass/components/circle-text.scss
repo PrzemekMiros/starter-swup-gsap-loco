@@ -1,0 +1,28 @@
+svg {
+    max-width: 80vmin;
+  }
+  svg:hover .textcircle {
+    transform: scale(1.2) rotate(90deg);
+  }
+  
+  .textcircle {
+    transition: transform 1s cubic-bezier(0.65, 0, 0.35, 1);
+    transform-origin: 250px 250px;
+  }
+  
+  .textcircle text {
+    font-size: 38px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-variant-ligatures: none;
+    letter-spacing: 6px;
+    animation: rotate 25s linear infinite;
+    transform-origin: 250px 250px;
+    opacity: .3;
+  }
+  
+  @keyframes rotate {
+    to {
+      transform: rotate(360deg);
+    }
+  }

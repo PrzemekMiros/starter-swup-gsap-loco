@@ -1,5 +1,5 @@
 
-header{
+.site-header {
   position: fixed;
   left: 0;
   top: 2em;
@@ -12,19 +12,19 @@ header{
   height: auto;
 }
 
-.menu-toggle{
+.menu-toggle {
   background: transparent;
   border: none;
   cursor: pointer;
 }
 
-.hamburger path{
+.hamburger path {
   fill: none;
   stroke: #111;
   stroke-linecap: round;
 }
 
-.fullpage-menu{
+.fullpage-menu {
   position: fixed;
   left: 0;
   top: 0;
@@ -33,13 +33,12 @@ header{
   display: none;
   z-index: 99
 }
-.fullpage-menu-inner{
+.fullpage-menu-inner {
   display: flex;
   align-items: center;
-  height: 100%;
-  padding-top: 2em
+  height: 100%
 }
-.menu-bg{
+.menu-bg {
   display: flex;
   position: absolute;
   left: 0;
@@ -48,39 +47,40 @@ header{
   width: 100%;
   z-index: 99
 }
-.menu-bg span{
-  width: 33.334%;
+.menu-bg span {
+  width: 33.3%;
   height: 100%;
   background: #161616;
   display: block;
 }
 
-nav{
+.main-menu {
   position: relative;
   z-index: 999;
 }
 
-nav ul {
+.main-menu ul {
   padding-left: 0;
   list-style-type: none;
 }
-nav li{
+.main-menu li{
+  margin-bottom: 1em;
   width: max-content;
   overflow: hidden;
   transition: transform 300ms ease-in-out 0s;
 }
-nav li + li{
+.main-menu li + li{
   margin-top: 20px;
 }
-nav li a{
-  font-size: 80px;
+.main-menu li a {
+  font-size: 65px;
   color: #fff;
   text-decoration: none;
   font-weight: 700;
   display: inline-block;
   line-height: 1;
 }
-nav li:hover{
+.main-menu li:hover{
   transform: translateX(50px);
 }
 .header-nav-footer{
@@ -123,8 +123,8 @@ nav li:hover{
   .fullpage-menu-inner{
       padding: 70px 30px;
   }
-  nav li a{
-      font-size: 54px;
+  .site-header nav li a{
+      font-size: 50px;
   }
   .social-links li{
       font-size: 16px;

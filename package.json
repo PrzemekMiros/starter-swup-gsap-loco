@@ -22,6 +22,7 @@
     "@swup/body-class-plugin": "^1.0.2",
     "@swup/progress-plugin": "^1.2.1",
     "lightningcss-cli": "^1.18.0",
+    "luxon": "^3.2.1",
     "npm-run-all": "^4.1.5",
     "sass": "^1.57.1"
   }

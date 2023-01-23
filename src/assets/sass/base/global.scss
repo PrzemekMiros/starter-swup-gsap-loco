@@ -6,7 +6,7 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: #f6faef;
+    background-color: var(--color-light-1);
     font-family: "Syne", sans-serif
   }
 
@@ -21,6 +21,11 @@ body {
     color: inherit
   }
 
+  ul, li {
+    padding-left: 0;
+    list-style: none
+  }
+
   .grid {
     position: fixed;
     top: 0;
@@ -28,7 +33,7 @@ body {
     height: 100vh;
     width: 100%;
     pointer-events: none;
-    z-index: 1;
+    z-index: -1
   }
 
   .grid-item {

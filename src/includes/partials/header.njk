@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Eleventy Starter - Gsap | Locomotive | Swup</title>
+  <title>{{ title }} - Eleventy Starter | Gsap | Locomotive | Swup</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -17,7 +17,7 @@
 
   <div class="scrollContainer" id="pinSection">
 
-    <header>
+    <header class="site-header">
       <div class="container" data-scroll-sticky data-scroll-target="#pinSection">
         <div class="row gx-0">
           <div class="col-1">
@@ -99,8 +99,8 @@
         </div>
       </div>
     </header>
-
-    <main id="swup" class="transition-fade">
+    <div id="swup" class="transition-fade">
+    <main>
       <section class="fullpage-menu">
         <div class="fullpage-menu-inner container" data-scroll-sticky data-scroll-target="#pinSection">
           <div class="menu-bg">
@@ -111,12 +111,12 @@
 
           <div class="row w-100">
             <div class="offset-md-1 col-md-9">
-              <nav>
-                <ul class="main-menu">
+              <nav class="main-menu">
+                <ul class="main-menu-list">
                   <li><a href="/">Główna</a></li>
-                  <li><a href="/portfolio/">Prace</a></li>
-                  <li><a href="https://github.com/PrzemekMiros/starter-swup-gsap-loco">Github</a></li>
-                  <li><a href="/">Kontakt</a></li>
+                  <li><a href="/realizacje/">Realizacje</a></li>
+                  <li><a href="/blog/">Artykuły</a></li>
+                  <li><a href="/kontakt/">Kontakt</a></li>
                 </ul>
               </nav>
             </div>
@@ -128,9 +128,9 @@
                 <div class="offset-md-1 col-md-11">
                   <ul class="social-links">
                     <li><a href="#">Facebook</a></li>
-                    <li><a href="#">Instagram</a></li>
-                    <li><a href="#">Twitter</a></li>
-                    <li>&copy;2021</li>
+                    <li><a href="#">Github</a></li>
+                    <li><a href="#">Codepen</a></li>
+                    <li>&copy;{{ year }}</li>
                   </ul>
                 </div>
               </div>
