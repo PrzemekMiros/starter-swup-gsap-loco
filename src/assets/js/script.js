@@ -141,4 +141,39 @@ gsap.utils.toArray(".parallax-wrap").forEach(function(container) {
 });
 
 
+
+
 }
+
+// Intro
+
+gsap.from(".logo-wrap-inner", {
+  opacity: 1, 
+  backgroundColor: "#111",
+  delay: 3,
+  duration: 1
+});
+
+gsap.from(".logo-line-1", {
+  height: 0,
+  duration: 1.2
+});
+gsap.from(".logo-line-2", {
+  height: 0,
+  duration: 1
+});
+gsap.from(".logo-line-3", {
+  height: 0,
+  duration: 1.5
+});
+
+tlintro = gsap.timeline();
+
+tlintro.from(".logo-wrap", {
+  y: "30vh",
+  x: "25vw",
+  width: "30vw",
+  delay: 2,
+  duration: 1
+});
+
