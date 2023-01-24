@@ -8,7 +8,7 @@ pagination:
     alias: blog
 ---
 
-<div class="row gx-0 pb-xsmall">
+<div class="row gx-0 pb-medium">
     <div class="offset-md-1 col-md-9">
         <h1 class="xl" data-splitting>
             {{ title }}
@@ -20,7 +20,7 @@ pagination:
     {% for post in blog %}
     <div class="offset-md-1 col-md-5 fadeIn">
         <a href="{{ post.url }}">
-            <div class="archive-post pb-small">
+            <div class="archive-post pb-medium">
                 <div class="parallax-wrap aspect_16-9">
                     <img src="{{ post.data.thumbnail }}" alt="{{ post.data.title }}" loading="lazy"/>
                   </div>
