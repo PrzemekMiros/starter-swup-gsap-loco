@@ -147,33 +147,47 @@ gsap.utils.toArray(".parallax-wrap").forEach(function(container) {
 
 // Intro
 
-gsap.from(".logo-wrap-inner", {
-  opacity: 1, 
-  backgroundColor: "#111",
+gsap.from(".scrollContainer", {
+  autoAlpha: 0,
+  opacity: 0,
+  duration: 1
+});
+
+gsap.to(".logo-wrap-inner", {
+  opacity: 0, 
   delay: 3,
   duration: 1
 });
 
+gsap.from(".menu-toggle", {
+  autoAlpha: 0,
+  opacity: 0,
+  delay: 3,
+})
+
 gsap.from(".logo-line-1", {
-  height: 0,
-  duration: 1.2
-});
-gsap.from(".logo-line-2", {
-  height: 0,
-  duration: 1
-});
-gsap.from(".logo-line-3", {
   height: 0,
   duration: 1.5
 });
+gsap.from(".logo-line-2", {
+  height: 0,
+  duration: 1.3
+});
+gsap.from(".logo-line-3", {
+  height: 0,
+  duration: 2
+});
+
 
 tlintro = gsap.timeline();
 
 tlintro.from(".logo-wrap", {
-  y: "30vh",
-  x: "25vw",
-  width: "30vw",
+  y: "28vh",
+  x: "20vw",
+  width: "40vw",
   delay: 2,
   duration: 1
 });
+
+
 
