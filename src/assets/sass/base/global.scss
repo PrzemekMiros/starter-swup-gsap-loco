@@ -11,6 +11,11 @@ body {
     font-family: "Syne", sans-serif
   }
 
+  main {
+    position: relative;
+    z-index: 9
+  }
+
   img {
     display: block;
     width: 100%;
