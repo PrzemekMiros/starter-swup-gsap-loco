@@ -145,6 +145,8 @@ gsap.utils.toArray(".parallax-wrap").forEach(function(container) {
 
 }
 
+
+
 // Intro
 
 gsap.from(".scrollContainer", {
@@ -152,6 +154,7 @@ gsap.from(".scrollContainer", {
   opacity: 0,
   duration: 1
 });
+
 
 gsap.to(".logo-wrap-inner", {
   opacity: 0, 

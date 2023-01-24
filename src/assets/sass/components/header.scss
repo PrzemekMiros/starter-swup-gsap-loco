@@ -4,7 +4,18 @@
   left: 0;
   top: 2em;
   width: 100%;
+  opacity: 0;
+  animation: headerFade .1s forwards .2s;
   z-index: 99
+}
+
+@keyframes headerFade {
+  0% {
+    opacity: 0
+  }
+  100% {
+    opacity: 1
+  }
 }
 
 .logo-wrap {
@@ -16,6 +27,7 @@
   width: 100vw;
   height: 100vh;
   background-color: var(--color-light-1);
+  pointer-events: none;
   opacity: 1;
   z-index: 99
 }
