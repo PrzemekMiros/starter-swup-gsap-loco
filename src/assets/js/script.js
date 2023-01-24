@@ -34,7 +34,7 @@ function animationMain() {
     gsap.from(reveal, {
       y: "100%",
       duration: .6,
-      stagger: .05,
+      stagger: .03,
       ease: Power3,
       scrollTrigger: {
         scroller: ".scrollContainer",
@@ -117,7 +117,6 @@ menuToggle.addEventListener('click', function(){
 });
 
 
-
 // parallax 
 
 gsap.utils.toArray(".parallax-wrap").forEach(function(container) {
@@ -140,11 +139,7 @@ gsap.utils.toArray(".parallax-wrap").forEach(function(container) {
     }); 
 });
 
-
-
-
 }
-
 
 
 // Intro
