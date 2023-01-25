@@ -2,10 +2,11 @@
 :root {
     --color-accent-1: rgb(0, 228, 114);
     --color-dark-1: #111;
-    --color-light-1: #f6faef;
+    --color-light-1: #f8f8f8;
     --color-light-2: #edf1e5;
     --color-heading: #111;
-    --color-text: #555;
+    --color-text: #222;
+    --color-border: #999;
 }
 
 @media (prefers-color-scheme:dark) {

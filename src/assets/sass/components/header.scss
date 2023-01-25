@@ -2,7 +2,8 @@
 .site-header {
   position: fixed;
   left: 0;
-  top: 2em;
+  top: 0;
+  padding-top: 1em;
   width: 100%;
   opacity: 0;
   animation: headerFade .1s forwards .2s;
@@ -37,11 +38,12 @@
   height: auto
 }
 
-.logo-wrap svg rect {
+.logo rect {
   fill: var(--color-dark-1)
 }
 
 .menu-toggle {
+  margin-top: 10px;
   background: transparent;
   border: none;
   cursor: pointer

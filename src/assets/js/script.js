@@ -143,7 +143,6 @@ gsap.utils.toArray(".parallax-wrap").forEach(function(container) {
 
 
 // Intro
-
 gsap.from(".scrollContainer", {
   autoAlpha: 0,
   opacity: 0,
@@ -181,8 +180,8 @@ tlintro = gsap.timeline();
 
 tlintro.from(".logo-wrap", {
   y: "28vh",
-  x: "20vw",
-  width: "40vw",
+  x: "25vw",
+  width: "33vw",
   delay: 2,
   duration: 1
 });

@@ -1,0 +1,53 @@
+
+.border-right {
+    position: relative;
+  }
+  
+  .border-right::before {
+    position: absolute;
+    content: "";
+    right: -4em;
+    width: 2px;
+    height: 100%;
+    background: var(--color-border);
+  }
+  
+  
+  .hero-parallax  {
+    padding-top: .5em;
+    padding-bottom: .5em;
+    background: #111;
+    overflow: hidden;
+  }
+  
+  .hero-parallax-content {
+    height: 75vh;
+    transform: rotateZ(45deg) translateY(-50%);
+  }
+  
+  .parallax-item {
+    margin-bottom: .5em
+  }
+
+  .parallax-item img {
+    width: 150%
+  }
+  
+  .hero-intro-footer {
+    padding-bottom: 4.8em;
+  }
+  
+  .logo-hero {
+    margin-top: 8px;
+    width: 100%;
+  }
+
+  @media(min-width:767px) {
+      .parallax-item img {
+        width: 100%
+      }
+      .hero-intro-footer {
+        padding-top: 4em;
+        border-top: 2px solid var(--color-border)
+      }
+  }

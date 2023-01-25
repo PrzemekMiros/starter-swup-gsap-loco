@@ -6,70 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>{{ title }} - Eleventy Starter | Gsap | Locomotive | Swup</title>
   <meta name="description" content="{{ description }}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cantarell&family=Poppins:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | url }}">
-  <style>
-@font-face {
-  font-family: 'Syne';
-  font-style: normal;
-  font-weight: 400;
-  src: url('/assets/fonts/syne-v15-latin-ext_latin-regular.eot'); /* IE9 Compat Modes */
-  src: local(''),
-       url('/assets/fonts/syne-v15-latin-ext_latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('/assets/fonts/syne-v15-latin-ext_latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
-       url('/assets/fonts/syne-v15-latin-ext_latin-regular.woff') format('woff'), /* Modern Browsers */
-       url('/assets/fonts/syne-v15-latin-ext_latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
-       url('/assets/fonts/syne-v15-latin-ext_latin-regular.svg#Syne') format('svg'); /* Legacy iOS */
-}
-@font-face {
-  font-family: 'Syne';
-  font-style: normal;
-  font-weight: 600;
-  src: url('/assets/fonts/syne-v15-latin-ext_latin-600.eot'); /* IE9 Compat Modes */
-  src: local(''),
-       url('/assets/fonts/syne-v15-latin-ext_latin-600.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('/assets/fonts/syne-v15-latin-ext_latin-600.woff2') format('woff2'), /* Super Modern Browsers */
-       url('/assets/fonts/syne-v15-latin-ext_latin-600.woff') format('woff'), /* Modern Browsers */
-       url('/assets/fonts/syne-v15-latin-ext_latin-600.ttf') format('truetype'), /* Safari, Android, iOS */
-       url('/assets/fonts/syne-v15-latin-ext_latin-600.svg#Syne') format('svg'); /* Legacy iOS */
-}
-@font-face {
-  font-family: 'Syne';
-  font-style: normal;
-  font-weight: 700;
-  src: url('/assets/fonts/syne-v15-latin-ext_latin-700.eot'); /* IE9 Compat Modes */
-  src: local(''),
-       url('/assets/fonts/syne-v15-latin-ext_latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('/assets/fonts/syne-v15-latin-ext_latin-700.woff2') format('woff2'), /* Super Modern Browsers */
-       url('/assets/fonts/syne-v15-latin-ext_latin-700.woff') format('woff'), /* Modern Browsers */
-       url('/assets/fonts/syne-v15-latin-ext_latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
-       url('/assets/fonts/syne-v15-latin-ext_latin-700.svg#Syne') format('svg'); /* Legacy iOS */
-}
-/* poppins-300 - latin-ext_latin */
-@font-face {
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 300;
-  src: url('/assets/fonts/poppins-v20-latin-ext_latin-300.eot'); /* IE9 Compat Modes */
-  src: local(''),
-       url('/assets/fonts/poppins-v20-latin-ext_latin-300.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('/assets/fonts/poppins-v20-latin-ext_latin-300.woff2') format('woff2'), /* Super Modern Browsers */
-       url('/assets/fonts/poppins-v20-latin-ext_latin-300.woff') format('woff'), /* Modern Browsers */
-       url('/assets/fonts/poppins-v20-latin-ext_latin-300.ttf') format('truetype'), /* Safari, Android, iOS */
-       url('/assets/fonts/poppins-v20-latin-ext_latin-300.svg#Poppins') format('svg'); /* Legacy iOS */
-}
-@font-face {
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 400;
-  src: url('/assets/fonts/poppins-v20-latin-ext_latin-regular.eot'); /* IE9 Compat Modes */
-  src: local(''),
-       url('/assets/fonts/poppins-v20-latin-ext_latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('/assets/fonts/poppins-v20-latin-ext_latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
-       url('/assets/fonts/poppins-v20-latin-ext_latin-regular.woff') format('woff'), /* Modern Browsers */
-       url('/assets/fonts/poppins-v20-latin-ext_latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
-       url('/assets/fonts/poppins-v20-latin-ext_latin-regular.svg#Poppins') format('svg'); /* Legacy iOS */
-}
-  </style>
+
 </head>
 
 <body class="page-{% if page.fileSlug %}{{ page.fileSlug }}{% else %}home{% endif %}">
@@ -79,7 +20,7 @@
     <header class="site-header">
       <div class="container" data-scroll-sticky data-scroll-target="#pinSection">
         <div class="row gx-0"> 
-          <div class="col-1">
+          <div class="col-2 col-md-1">
             <div class="logo-wrap">
                   <a href="/" title="Logo">
                     <svg class="logo" width="568" height="273" viewBox="0 0 568 273" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -138,7 +79,7 @@
                   </a>
             </div>
           </div>
-          <div class="col-11 d-flex justify-content-end">
+          <div class="col-10 col-md-11 d-flex justify-content-end">
             <button class="menu-toggle" id="menuToggle" aria-label="Open menu">
               <svg viewBox="0 0 12 10" class="hamburger" height="40px" width="40px">
                 <path d="M10,2 L2,2" class="bar-1"></path>
