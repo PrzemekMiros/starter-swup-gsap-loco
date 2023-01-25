@@ -8,7 +8,7 @@ pagination:
     alias: blog
 ---
 
-<div class="row gx-0 pb-medium">
+<div class="row gx-0 pb-small">
     <div class="offset-md-1 col-md-9">
         <h1 class="xl" data-splitting>
             {{ title }}
@@ -39,7 +39,7 @@ pagination:
 <div class="row gx-0 pb-large">
 <div class="offset-md-1 col-md-5">
 <nav>
-    <ul class="pagination d-flex">
+    <ul class="pagination d-flex fadeIn">
         {%- for pageEntry in pagination.pages %}
         <li class="pagination-item">
             <a class="pagination-link" href="{{ pagination.hrefs[ loop.index0 ] }}"

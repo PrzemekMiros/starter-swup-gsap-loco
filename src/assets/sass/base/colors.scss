@@ -1,10 +1,10 @@
 
 :root {
     --color-accent-1: rgb(0, 228, 114);
-    --color-dark-1: #111;
+    --color-dark-1: #091117;
     --color-light-1: #f8f8f8;
     --color-light-2: #edf1e5;
-    --color-heading: #111;
+    --color-heading: #091117;
     --color-text: #222;
     --color-border: #999;
 }
@@ -12,8 +12,8 @@
 @media (prefers-color-scheme:dark) {
     :root {
     --color-dark-1: #fff;
-    --color-light-1: #111;
-    --color-light-2: #222;
+    --color-light-1: #091117;
+    --color-light-2: #0d1820;
     --color-heading: #fff;
     --color-text: #ddd;
     }

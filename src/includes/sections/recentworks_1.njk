@@ -1,0 +1,30 @@
+<section class="pb-large" data-scroll-section>
+    <div class="container">
+        <div class="row gx-0 pb-medium pb-md-large">
+            <div class="offset-md-1 col-md-9">
+                <h2 class="xl fadeIn">
+                    Wybrane prace
+                </h2>
+            </div>
+        </div>
+        <div class="row gx-0 works-grid">
+            {% for post in collections.realizacje %}
+            <div class="offset-md-1 col-md-5">
+                <a href="{{ post.url }}">
+                    <div class="archive-post pb-small pb-md-large fadeIn">
+                      <div class="parallax-wrap aspect_16-9">
+                        <img src="{{ post.data.thumbnail }}" alt="{{ post.data.title }}" loading="lazy"/>
+                      </div>
+                        <p class="archive-post-date mt-4 mb-2"> 
+                            <small>{{ post.data.description}}</small> 
+                        </p>
+                        <h2 class="archive-post-title h4 mt-0">
+                            {{ post.data.title }}
+                        </h2>
+                    </div>
+                </a>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>

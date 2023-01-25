@@ -50,6 +50,7 @@ function animationMain() {
           opacity: 0,
           y: 80,
           duration: 1,
+          ease: Power3,
           scrollTrigger: {
             scroller: ".scrollContainer",
             trigger: fadeInItem,
@@ -153,7 +154,8 @@ gsap.from(".scrollContainer", {
 gsap.to(".logo-wrap-inner", {
   opacity: 0, 
   delay: 3,
-  duration: 1
+  duration: 1,
+  ease: Power3,
 });
 
 gsap.from(".menu-toggle", {
@@ -164,15 +166,18 @@ gsap.from(".menu-toggle", {
 
 gsap.from(".logo-line-1", {
   height: 0,
-  duration: 1.5
+  duration: 1.5,
+  ease: Power3,
 });
 gsap.from(".logo-line-2", {
   height: 0,
-  duration: 1.3
+  duration: 1.3,
+  ease: Power3,
 });
 gsap.from(".logo-line-3", {
   height: 0,
-  duration: 2
+  duration: 1.8,
+  ease: Power3,
 });
 
 
@@ -180,7 +185,7 @@ tlintro = gsap.timeline();
 
 tlintro.from(".logo-wrap", {
   y: "28vh",
-  x: "25vw",
+  x: "26vw",
   width: "33vw",
   delay: 2,
   duration: 1

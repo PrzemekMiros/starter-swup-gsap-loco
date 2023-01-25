@@ -11,9 +11,14 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addFilter('dateDisplay', require('./src/filters/date-display.js'));
     eleventyConfig.addShortcode("year", () => `${new Date().getFullYear()}`);
 
-    // Collections
+    // Collections blog
     eleventyConfig.addCollection('posts', function(collectionApi) {
     return collectionApi.getFilteredByGlob('src/blog/**/*.md').reverse();
+    });
+
+    // Collections portfolio
+    eleventyConfig.addCollection('realizacje', function(collectionApi) {
+    return collectionApi.getFilteredByGlob('src/realizacje/**/*.md').reverse();
     });
 
     return {

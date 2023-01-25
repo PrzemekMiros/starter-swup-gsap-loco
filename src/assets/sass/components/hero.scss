@@ -14,19 +14,19 @@
   
   
   .hero-parallax  {
+    height: 75vh;
     padding-top: .5em;
     padding-bottom: .5em;
-    background: #111;
+    background: var(--color-dark-2);
     overflow: hidden;
   }
   
   .hero-parallax-content {
-    height: 75vh;
-    transform: rotateZ(45deg) translateY(-50%);
+    transform: rotate(45deg) translateX(-30%) translateY(-32%);
   }
   
   .parallax-item {
-    margin-bottom: .5em
+    margin-bottom: 2.5em
   }
 
   .parallax-item img {
@@ -44,7 +44,7 @@
 
   @media(min-width:767px) {
       .parallax-item img {
-        width: 100%
+        width: 110%
       }
       .hero-intro-footer {
         padding-top: 4em;
