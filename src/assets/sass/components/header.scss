@@ -7,7 +7,7 @@
   width: 100%;
   opacity: 0;
   animation: headerFade .1s forwards .2s;
-  mix-blend-mode: exclusion;
+  mix-blend-mode: difference;
   z-index: 99
 }
 
@@ -40,7 +40,7 @@
 }
 
 .logo rect {
-  fill: var(--color-heading)
+  fill: var(--color-light-1)
 }
 
 .menu-toggle {
@@ -52,7 +52,7 @@
 
 .hamburger path {
   fill: none;
-  stroke: var(--color-dark-1);
+  stroke: var(--color-light-1);
   stroke-linecap: round
 }
 

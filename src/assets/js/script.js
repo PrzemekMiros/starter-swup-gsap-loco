@@ -68,14 +68,12 @@ const menuBar = gsap.timeline();
 menuBar.to('.bar-1', 0.5,{
 	attr:{d: "M8,2 L2,8"},
 	x:1,
-  stroke: "#fff",
 	ease: Power2.easeInOut
 }, 'start')
 
 menuBar.to('.bar-2', 0.5,{
 	attr:{d: "M8,8 L2,2"},
 	x:1,
-  stroke: "#fff",
 	ease: Power2.easeInOut
 }, 'start')
 
@@ -153,7 +151,7 @@ gsap.from(".scrollContainer", {
 });
 
 gsap.from(".site-header", {
-  "mix-blend-mode": "normal",
+  "mix-blend-mode": "difference",
   delay: 3,
   duration: 1
 })
@@ -191,8 +189,8 @@ gsap.from(".logo-line-3", {
 tlintro = gsap.timeline();
 
 tlintro.from(".logo-wrap", {
-  y: "26vh",
-  x: "22em",
+  y: "30vh",
+  x: "80%",
   width: "34vw",
   delay: 2,
   duration: 1

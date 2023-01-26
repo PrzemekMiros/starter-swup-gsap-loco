@@ -6,9 +6,12 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: var(--color-light-1);
     color: var(--color-text);
     font-family: var(--font-primary)
+  }
+
+  main {
+    background-color: var(--color-light-1)
   }
   
   img {
@@ -72,7 +75,7 @@ body {
 
 
 @media(min-width:767px) {
-  .works-grid div:nth-child(even) {
+  .works-1 .works-grid div:nth-child(even) {
     margin-top: -6em;
     width: 33.3%
   }

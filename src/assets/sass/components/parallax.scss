@@ -9,6 +9,10 @@
   .aspect_16-9 {
     --ratio: 1380/868;
   }
+
+  .aspect_16-5 {
+    --ratio: 1380/468;
+  }
   
   .parallax-wrap img {
     position: absolute;
