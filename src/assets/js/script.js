@@ -29,6 +29,8 @@ function animationMain() {
   // after everything is set up, refresh() ScrollTrigger and update LocomotiveScroll because padding may have been added for pinning, etc.
   ScrollTrigger.refresh();
 
+  new ResizeObserver(() => locoScroll.update()).observe(document.querySelector(".scrollContainer"));
+
     const reveal = document.querySelectorAll(".char");
     
     gsap.from(reveal, {
@@ -150,6 +152,11 @@ gsap.from(".scrollContainer", {
   duration: 1
 });
 
+gsap.from(".site-header", {
+  "mix-blend-mode": "normal",
+  delay: 3,
+  duration: 1
+})
 
 gsap.to(".logo-wrap-inner", {
   opacity: 0, 
@@ -184,7 +191,7 @@ gsap.from(".logo-line-3", {
 tlintro = gsap.timeline();
 
 tlintro.from(".logo-wrap", {
-  y: "20em",
+  y: "18em",
   x: "22em",
   width: "34vw",
   delay: 2,

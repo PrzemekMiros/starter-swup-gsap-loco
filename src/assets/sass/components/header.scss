@@ -7,6 +7,7 @@
   width: 100%;
   opacity: 0;
   animation: headerFade .1s forwards .2s;
+  mix-blend-mode: exclusion;
   z-index: 99
 }
 
@@ -39,7 +40,7 @@
 }
 
 .logo rect {
-  fill: var(--color-dark-1)
+  fill: var(--color-heading)
 }
 
 .menu-toggle {
@@ -79,9 +80,9 @@
   z-index: 99
 }
 .menu-bg span {
-  width: 33.3%;
+  width: 34%;
   height: 100%;
-  background: #5323ff;
+  background: #09141d;
   display: block;
 }
 
