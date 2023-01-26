@@ -134,26 +134,31 @@ menuToggle.addEventListener('click', function(){
 
 
 // parallax 
+if (window.matchMedia("(min-width: 767px)").matches) {
+    gsap.utils.toArray(".parallax-wrap").forEach(function(container) {
+      let image = container.querySelector("img");
+    
+      let tl = gsap.timeline({
+          scrollTrigger: {
+            scroller: ".scrollContainer",
+            trigger: container,
+            scrub: true,
+            pin: false,
+          },
+        }); 
+        tl.from(image, {
+          yPercent: -10,
+          ease: "none",
+        }).to(image, {
+          yPercent: 10,
+          ease: "none",
+        }); 
+    });
+  }
 
-gsap.utils.toArray(".parallax-wrap").forEach(function(container) {
-  let image = container.querySelector("img");
 
-  let tl = gsap.timeline({
-      scrollTrigger: {
-        scroller: ".scrollContainer",
-        trigger: container,
-        scrub: true,
-        pin: false,
-      },
-    }); 
-    tl.from(image, {
-      yPercent: -10,
-      ease: "none",
-    }).to(image, {
-      yPercent: 10,
-      ease: "none",
-    }); 
-});
+
+
 
 }
 
