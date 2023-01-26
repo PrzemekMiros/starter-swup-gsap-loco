@@ -184,8 +184,8 @@ gsap.from(".logo-line-3", {
 tlintro = gsap.timeline();
 
 tlintro.from(".logo-wrap", {
-  y: "28vh",
-  x: "26vw",
+  y: "20em",
+  x: "21em",
   width: "34vw",
   delay: 2,
   duration: 1
