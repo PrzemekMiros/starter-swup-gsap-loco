@@ -6,6 +6,10 @@
     padding-bottom: calc(100% / (var(--ratio))); 
   }
 
+  .aspect_16-12 {
+    --ratio: 1380/1205;
+  }
+
   .aspect_16-9 {
     --ratio: 1380/868;
   }

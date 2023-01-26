@@ -8,13 +8,14 @@ pagination:
     alias: blog
 ---
 
-<div class="row gx-0 pb-small">
-    <div class="offset-md-1 col-md-9">
-        <h1 class="xl" data-splitting>
-            {{ title }}
+<div class="row gx-0 pb-medium">
+    <div class="offset-md-1 col-md-11">
+        <h1 class="xxl" data-splitting>
+            {{ title }} <span class="dot">.</span>
         </h1>
+        <div class="line-x lx-2"></div>
     </div>
-</div>
+  </div>
 
 <div class="row gx-0">
     {% for post in blog %}

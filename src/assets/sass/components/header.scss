@@ -80,8 +80,20 @@
   z-index: 99
 }
 .menu-bg span {
+  position: relative;
   width: 34%;
   height: 100%;
+  background: #09141d;
+  display: block;
+}
+
+.menu-bg span::before {
+  position: absolute;
+  content: "";
+  width: 10px;
+  height: 100%;
+  top: 0;
+  right: -5px;
   background: #09141d;
   display: block;
 }

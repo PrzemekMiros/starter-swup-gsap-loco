@@ -80,3 +80,21 @@ body {
     width: 33.3%
   }
 }
+
+.archive-post-link {
+  font-size: 20px;
+}
+
+/*  Line
+--------------------------------- */
+
+.line-x {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: var(--color-border)
+}
+
+.lx-2 {
+  height: 2px
+}

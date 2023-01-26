@@ -1,35 +1,46 @@
 ---
-layout: layouts/blog.njk
+layout: layouts/works.njk
 title: Realizacje
 description: Zobacz moje ostatnie realizacje stron, sklepów i serwisów internetowych
 pagination: 
-    data: collections.realizacje
+    data: collections.works
     size: 6
     alias: realizacje
 ---
 
-<div class="row gx-0 pb-small">
-  <div class="offset-md-1 col-md-9">
-      <h1 class="xl" data-splitting>
-          {{ title }}
+<div class="row gx-0 pb-medium">
+  <div class="offset-md-1 col-md-11">
+      <h1 class="xxl" data-splitting>
+          {{ title }} <span class="dot">.</span>
       </h1>
+      <div class="line-x lx-2"></div>
   </div>
 </div>
 
 <div class="row gx-0">
-    {% for post in realizacje %}
+    {% for post in collections.works %}
     <div class="offset-md-1 col-md-5 fadeIn">
         <a href="{{ post.url }}">
             <div class="archive-post pb-medium">
-              <div class="parallax-wrap aspect_16-9">
+              <div class="parallax-wrap aspect_16-12">
                 <img src="{{ post.data.thumbnail }}" alt="{{ post.data.title }}" loading="lazy"/>
               </div>
-                <p class="archive-post-date mt-4 mb-2"> 
-                    <small>{{ post.data.description}}</small> 
-                </p>
+              <p class="archive-post-date mt-4 mb-2"> 
+                <small>{{ post.data.category}}</small> 
+              </p>
                 <h2 class="archive-post-title h4 mt-0">
                     {{ post.data.title }}
                 </h2>
+                <p class="archive-post-date mt-4 mb-4"> 
+                    <small>{{ post.data.description}}</small> 
+                </p>
+                <a href="{{ post.data.link}}" class="archive-post-link mt-5 mb-2"> 
+                    Zobacz online 
+                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13 1L1 13" stroke="var(--color-dark-1)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <path d="M3 1H13V11" stroke="var(--color-dark-1)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                </a>
             </div>
         </a>
     </div>

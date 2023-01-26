@@ -17,7 +17,7 @@ module.exports = function(eleventyConfig) {
     });
 
     // Collections portfolio
-    eleventyConfig.addCollection('realizacje', function(collectionApi) {
+    eleventyConfig.addCollection('works', function(collectionApi) {
     return collectionApi.getFilteredByGlob('src/realizacje/**/*.md').reverse();
     });
 

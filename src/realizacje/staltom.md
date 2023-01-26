@@ -1,13 +1,18 @@
 ---
-title: Staltom
-description: Producent konstrukcji stalowych
-date: 2022-02-08T18:48:34.950Z
+client: Staltom
+title: Producent konstrukcji 
+description: Strona internetowa dla producenta konstrukcji stalowych. Indywidualny projekt graficzny. Oparta na systemie zarządzania treścią Wordpress. Bez builderów.
+date: 2022-02-08
 author: Przemek Miros
-thumbnail: /assets/img/mockups/staltom.jpg
-tags:
-  - Strony internetowe
-  - Portale internetowe
+thumbnail: /assets/img/mockups/staltom-thumb.jpg
+imageMain: /assets/img/mockups/staltom-img.jpg
+imageMobile: /assets/img/mockups/staltom-mobile.jpg
+imageGridOne: /assets/img/mockups/staltom-1.jpg
+imageGridTwo: /assets/img/mockups/staltom-2.jpg
+category: ['Strona internetowa']
+link: https://staltom.com.pl/
 ---
+
 ## Producent konstrukcji stalowych
 
 Strona internetowa dla producenta konstrukcji stalowych. Indywidualny projekt graficzny. Oparta na systemie zarządzania treścią Wordpress. Bez builderów.

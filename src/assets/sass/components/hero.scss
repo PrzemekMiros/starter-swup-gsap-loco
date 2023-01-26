@@ -48,7 +48,7 @@
 
   @media(min-width:767px) {
     .hero-parallax  {
-      height: 75vh
+      height: 85vh
     }
     .parallax-item {
       margin-bottom: 2.5em
@@ -57,7 +57,6 @@
         width: 110%
       }
       .hero-intro-footer {
-        padding-top: 4em;
-        border-top: 2px solid var(--color-border)
+        padding-top: 4em
       }
   }

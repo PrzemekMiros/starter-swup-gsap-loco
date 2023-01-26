@@ -61,6 +61,21 @@ function animationMain() {
     })
 });
 
+const lineX = gsap.utils.toArray('.line-x');
+
+lineX.forEach(lineXItem => {
+  gsap.from(lineXItem, { 
+    width: "0",
+    duration: 1,
+    ease: Power3,
+    scrollTrigger: {
+      scroller: ".scrollContainer",
+      trigger: lineXItem,
+      start: "top 90%",
+    }
+})
+});
+
 const menuToggle = document.getElementById("menuToggle");
 
 const menuBar = gsap.timeline();
@@ -99,7 +114,7 @@ tl.from('.main-menu li a', {
 	duration:1.5,
 	y:"100%",
 	stagger: 0.2,
-	ease: Power4. easeOut,
+	ease: 'Expo.easeInOut'
 } , "-=0.5");
 
 tl.from('.social-links li', {
@@ -107,7 +122,7 @@ tl.from('.social-links li', {
 	y:"-100%",
 	opacity:0,
 	stagger: 0.1,
-	ease: Power4. easeOut,
+	ease: 'Expo.easeInOut'
 } , "-=0.5");
 
 tl.reverse();
@@ -160,7 +175,7 @@ gsap.to(".logo-wrap-inner", {
   opacity: 0, 
   delay: 3,
   duration: 1,
-  ease: Power3,
+	ease: 'Expo.easeInOut'
 });
 
 gsap.from(".menu-toggle", {
@@ -189,8 +204,8 @@ gsap.from(".logo-line-3", {
 tlintro = gsap.timeline();
 
 tlintro.from(".logo-wrap", {
-  y: "30vh",
-  x: "80%",
+  y: "28vh",
+  x: "70%",
   width: "34vw",
   delay: 2,
   duration: 1
