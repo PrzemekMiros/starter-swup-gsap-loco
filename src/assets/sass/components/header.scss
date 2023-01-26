@@ -144,15 +144,15 @@
   text-decoration: none;
 }
 
-@media screen and (max-width:767px) {
-  .header-row, .header-nav-footer{
-      padding: 30px;
+@media(max-width:767px) {
+  .menu-toggle {
+    margin-top: 0
+  }  
+  .header-nav-footer{
+      padding: 30px 0;
   }
-  .fullpage-menu-inner{
-      padding: 70px 30px;
-  }
-  .site-header nav li a{
-      font-size: 50px;
+  .main-menu li a {
+      font-size: 35px;
   }
   .social-links li{
       font-size: 16px;

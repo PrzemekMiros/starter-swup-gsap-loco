@@ -14,10 +14,10 @@
   
   
   .hero-parallax  {
-    height: 75vh;
+    height: 45vh;
     padding-top: .5em;
     padding-bottom: .5em;
-    background: var(--color-dark-2);
+    background: #0d1820;
     overflow: hidden;
   }
   
@@ -26,7 +26,7 @@
   }
   
   .parallax-item {
-    margin-bottom: 2.5em
+    margin-bottom: 1em
   }
 
   .parallax-item img {
@@ -43,6 +43,12 @@
   }
 
   @media(min-width:767px) {
+    .hero-parallax  {
+      height: 75vh
+    }
+    .parallax-item {
+      margin-bottom: 2.5em
+    }
       .parallax-item img {
         width: 110%
       }
