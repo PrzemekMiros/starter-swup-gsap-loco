@@ -156,6 +156,8 @@ if (window.matchMedia("(min-width: 767px)").matches) {
     });
   }
 
+  // Loop text
+  gsap.to(".loop-text", { xPercent: -50, ease: 'none', duration: 13, repeat: -1 })
 
 }
 

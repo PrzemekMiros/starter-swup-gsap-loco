@@ -133,26 +133,25 @@ strong {
 }
 
 @media(min-width:1200px) {
+  .xxxl {
+    font-size: 120px;
+    font-weight: 200
+  }
   .xxl {
     font-size: 80px
   }
-  
   .xl {
     font-size: 65px
   }
-  
   h1, .h1 {
       font-size: 50px
     }
-    
   h2, .h2 {
     font-size: 40px
   }
-  
   h3, .h3 {
     font-size: 32px
-  }
-  
+  } 
   h4, .h4 {
   font-size: 28px
   }

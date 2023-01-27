@@ -37,6 +37,23 @@ body {
 .w-100 {
   width: 100%
 }
+.w-200 {
+  white-space: nowrap;
+}
+.w-200 span {
+  display: inline-block
+}
+
+.loop-text {
+    display: inline-block;
+    white-space: nowrap;
+  }
+.loop-text span {
+    display: inline-block
+  }
+  section {
+    max-width: 100%
+  }
 
 .dot {
   color: var(--color-accent-1);
@@ -77,6 +94,7 @@ body {
 
 .archive-post-link {
   font-size: 20px;
+  font-weight: 300
 }
 
 /*  Line
