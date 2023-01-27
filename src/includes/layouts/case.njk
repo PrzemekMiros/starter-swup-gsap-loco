@@ -4,7 +4,7 @@
     <div class="container">
 
         <div class="row">
-            <div class="offset-md-1 col-md-10">
+            <div class="offset-md-3 col-md-6">
                     <div class="single-post-title-wrap">
                         <div class="breacrumbs fadeIn">
                             <a href="/">
@@ -23,33 +23,44 @@
                                 {{ title }}
                             </span>
                         </div>
-                        <h1 class="xl single-post-title my-5" data-splitting>
+                        <h1 class="xl single-post-title mt-5 mb-5" data-splitting>
                             {{ title }}
                         </h1>
                     </div>
-                    <div class="parallax-wrap aspect_16-9 fadeIn mb-4">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="offset-md-1 col-md-10">
+                    <div class="parallax-wrap aspect_16-9 fadeIn mb-5">
                         <img src="{{ imageMain | url }}" alt="{{ title }}" class="single-post-image img-fluid">
                     </div>
             </div>
         </div>
 
         <div class="row fadeIn">
-            <div class="offset-md-1 col-md-5">
+            <div class="offset-md-3 col-md-6">
                 {{ content | safe}}
+            </div>
+        </div>
+
+        <div class="row pt-medium fadeIn">
+            <div class="offset-md-1 col-md-10">
+                <div class="line-x"></div>
             </div>
         </div>
 
         <div class="row">
             <div class="col-md-12">
-                <div class="post-navigation pt-xsmall pb-medium">
+                <div class="post-navigation pt-small">
                     {%- if collections.works %}
                         {%- set nextPost = collections.works | getNextCollectionItem(page) %}
                         {%- set previousPost = collections.works | getPreviousCollectionItem(page) %}
                         {%- if nextPost or previousPost %}
-                            <ul class="d-flex flex-wrap">
+                            <ul class="d-flex flex-wrap fadeIn">
                                 {%- if previousPost %}
                                     <li class="offset-md-1 col-md-5 prev d-none d-md-block">
-                                        <p>
+                                        <p class="mb-4">
                                             <small>
                                                 Poprzedni:
                                             </small>
@@ -59,7 +70,7 @@
                                 {% endif %}
                                 {%- if nextPost %}
                                     <li class="offset-md-1 col-md-5 next">
-                                        <p>
+                                        <p class="mb-4">
                                             <small>
                                                 Kolejny:
                                             </small>
@@ -71,18 +82,6 @@
                         {%- endif %}
                     {%- endif %}
                 </div>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="offset-md-1 col-md-6">
-                <ul class="single-post-tag-list mt-5">
-                    {% for tag in category %}
-                        <li class="single-post-tag-list-item">
-                            <a href="/realizacje/{{ tag | slugify }}">{{ tag }}</a>
-                        </li>
-                    {% endfor %}
-                </ul>
             </div>
         </div>
 
