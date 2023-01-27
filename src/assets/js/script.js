@@ -157,13 +157,11 @@ if (window.matchMedia("(min-width: 767px)").matches) {
   }
 
 
-
-
-
 }
 
 
 // Intro
+/*
 gsap.from(".scrollContainer", {
   autoAlpha: 0,
   opacity: 0,
@@ -189,6 +187,10 @@ gsap.from(".menu-toggle", {
   delay: 3,
 })
 
+gsap.from(".logo", {
+  "pointer-events": "none",
+  duration: 3,
+});
 gsap.from(".logo-line-1", {
   height: 0,
   duration: 1.5,
@@ -215,6 +217,7 @@ tlintro.from(".logo-wrap", {
   delay: 2,
   duration: 1
 });
+*/
 
 
 

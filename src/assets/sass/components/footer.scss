@@ -1,10 +1,23 @@
 .site-footer {
-    padding: 180px 0;
-    background: #000;
+    background: #080d10;
     background-size: cover;
     background-position: center;
 }
 
-.site-footer p {
+.footer-top {
+    padding: 140px 0 160px
+}
+
+.footer-top p {
     color: #fff
 }
+
+.footer-list li {
+    list-style: none;
+    padding-left: 0;
+    margin-top: .5em;
+    font-size: 24px;
+    font-weight: 200;
+    color: #fff;
+}
+

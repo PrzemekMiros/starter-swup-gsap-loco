@@ -3,7 +3,7 @@
         <div class="row gx-0">
             <div class="offset-md-1 col-md-10">
                 <h2 class="xl fadeIn">
-                    Wybrane prace <span class="dot">.</span>
+                    Wybrane prace<span class="dot">.</span>
                 </h2>
                 <div class="pt-small">
                     <div class="line-x"></div>
@@ -25,17 +25,19 @@
                       <div class="offset-md-1 col-md-5 fadeIn d-flex align-items-center">
                         <div class="pr-md-5">
                             <a href="{{ post.url }}">
-                                <h2 class="archive-post-title h3 mt-0 mb-5">
+                                <p class="archive-post-client mb-3">
+                                    {{ post.data.client }}
+                                </p>
+                            </a>
+                            <a href="{{ post.url }}">
+                                <h2 class="archive-post-title h3 mt-0 mb-1">
                                     {{ post.data.title }}
                                 </h2>
                             </a>
-                            <a href="{{ post.url }}">
-                                <p class="archive-post-category h5">
-                                    {{ post.data.category }}
-                                </p>
-                            </a>
                             <p class="archive-post-desc mt-4 mb-4"> 
-                                {{ post.data.description}}
+                                <small>
+                                    {{ post.data.description}}
+                                </small>
                             </p>
                             <a href="{{ post.data.link}}" class="archive-post-link mt-4 mb-2"> 
                                 Zobacz online 
