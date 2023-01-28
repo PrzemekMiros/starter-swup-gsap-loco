@@ -1,0 +1,32 @@
+@media(min-width:767px) {
+    .service-item {
+        position: relative
+    }
+    .service-item::before {
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 8.32%;
+        right: 8.32%;
+        bottom: 100%;
+        background-color: rgb(15, 18, 21);
+        transition: .6s cubic-bezier(.79,0,.07,.88);
+        z-index: 0
+    }
+    .service-item:hover::before {
+        top: -1px;
+        bottom: 0
+    }
+    .service-number,
+    .service-arrow {
+        transition: .5s cubic-bezier(.79,0,.07,.88)
+    }
+    .service-item:hover .service-number {
+        opacity: 0;
+        transform: translateY(-2em);
+    }
+    .service-item:hover .service-arrow {
+        opacity: 0;
+        transform: translateY(-1em);
+    }
+}

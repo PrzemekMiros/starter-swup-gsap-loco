@@ -4,24 +4,20 @@ html.has-scroll-smooth {
   right: 0;
   top: 0;
   bottom: 0;
-    overflow: hidden
+  overflow: hidden
   }
-  
   html.has-scroll-dragging {
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none
   }
-  
   .has-scroll-smooth body {
     overflow: hidden
   }
-  
   .has-scroll-smooth [data-scroll-container] {
     min-height: 100vh 
   }
-  
   .c-scrollbar {
     position: absolute;
     right: 0;
@@ -32,20 +28,17 @@ html.has-scroll-smooth {
     transition: transform 0.3s, opacity 0.3s;
     opacity: 0; 
   }
-
   .c-scrollbar:hover {
     transform: scaleX(1.45); 
   }
-
   .c-scrollbar:hover, .has-scroll-scrolling .c-scrollbar, .has-scroll-dragging .c-scrollbar {
     opacity: 1 
   }
-  
   .c-scrollbar_thumb {
     position: absolute;
     top: 0;
     right: 0;
-    background-color: var(--color-dark-1);
+    background-color: rgb(128, 128, 128);
     opacity: 0.5;
     width: 8px;
     border-radius: 5px;
@@ -53,9 +46,7 @@ html.has-scroll-smooth {
     cursor: -webkit-grab;
     cursor: grab; 
   }
-
   .has-scroll-dragging .c-scrollbar_thumb {
     cursor: -webkit-grabbing;
     cursor: grabbing 
   }
-

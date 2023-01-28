@@ -10,17 +10,20 @@
 }
 
 .footer-top {
-    padding: 210px 0 20px
+    padding: 160px 0 20px
 }
 
 .footer-bottom {
-    padding: 0 0 30px;
+    padding: 0 0 100px;
 }
 
+.footer-mail {
+    font-size: 24px
+}
 
 @media(min-width:767px) {
-    .footer-list li {
-        font-size: 20px
+    .footer-mail {
+        font-size: 46px
     }
 }
 

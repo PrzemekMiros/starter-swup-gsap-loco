@@ -3,7 +3,6 @@
 <!-- Scripts -->
 <script src="/assets/js/vendor.js"></script>
 <script src="/assets/js/script.js"></script>
-
 <script>
   // Init locomotive
   const locoScroll = new LocomotiveScroll({
@@ -20,8 +19,6 @@
       smooth: !0
     }
   });
-
-
   // Swup init
   const swup = new Swup({
     animateHistoryBrowsing: true,
@@ -30,12 +27,10 @@
       new SwupBodyClassPlugin()
     ]
   });
-
   // Swup events re-init scripts
   document.addEventListener("swup:animationInStart", () => {
     locoScroll.destroy(), locoScroll.init()
-  })
-
+  });
   document.addEventListener("swup:animationInDone", () => {
     animationMain()
   }), console.clear();
@@ -44,5 +39,4 @@
   animationMain();
 </script>
 </body>
-
 </html>

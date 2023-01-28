@@ -78,10 +78,12 @@ lineX.forEach(lineXItem => {
 
 gsap.from(".footer-parallax", {
   y: "-25%",
+  opacity: 0,
   scrollTrigger: {
     scroller: ".scrollContainer",
     trigger: ".site-footer",
-    start: "top 90%",
+    start: "top 95%",
+    end: "bottom 90%",
     scrub: true
   }
 })
@@ -90,50 +92,27 @@ const menuToggle = document.getElementById("menuToggle");
 
 const menuBar = gsap.timeline();
 
-menuBar.to('.bar-1', 0.5,{
-	attr:{d: "M8,2 L2,8"},
-	x:1,
-	ease: Power2.easeInOut
-}, 'start')
-
-menuBar.to('.bar-2', 0.5,{
-	attr:{d: "M8,8 L2,2"},
-	x:1,
-	ease: Power2.easeInOut
-}, 'start')
-
-menuBar.reverse();
-
-
 var tl = gsap.timeline({ paused: true});
 
 tl.to('.fullpage-menu', {
-	duration:0,
+	duration: 0,
 	display: "block",
 	ease: 'Expo.easeInOut',
 });
 
 tl.from('.menu-bg span', {
-	duration:1,
-	y:"100%",
+	duration: .8,
+	y: "100%",
 	stagger: 0.1,
 	ease: 'Expo.easeInOut'
 });
 
 tl.from('.main-menu li a', {
-	duration:1.5,
+	duration: 1.3,
 	y:"110%",
-	stagger: 0.2,
-	ease: 'Expo.easeInOut'
-} , "-=0.2");
-
-tl.from('.social-links li', {
-	duration:1,
-	y:"-100%",
-	opacity:0,
 	stagger: 0.1,
 	ease: 'Expo.easeInOut'
-} , "-=0.2");
+});
 
 tl.reverse();
 
