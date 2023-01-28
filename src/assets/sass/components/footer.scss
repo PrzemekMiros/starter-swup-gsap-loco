@@ -17,6 +17,10 @@
     padding: 0 0 100px;
 }
 
+.footer-arrow {
+    width: 18px
+}
+
 .footer-mail {
     font-size: 24px
 }
@@ -24,6 +28,15 @@
 @media(min-width:767px) {
     .footer-mail {
         font-size: 46px
+    }
+    .footer-arrow {
+        width: 28px
+    }
+}
+
+@media(min-width:1200px) {
+    .footer-arrow {
+        width: 46px
     }
 }
 

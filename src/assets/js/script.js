@@ -211,8 +211,8 @@ tlintro.from(".logo-wrap", {
 } else {
   tlintro.from(".logo-wrap", {
     y: "28vh",
-    x: "4%",
-    width: "540%",
+    x: "13%",
+    width: "475%",
     delay: 2,
     duration: 1
   });
