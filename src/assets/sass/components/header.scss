@@ -8,7 +8,7 @@
   opacity: 0;
   animation: headerFade .1s forwards .2s;
   mix-blend-mode: difference;
-  z-index: 99
+  z-index: 999
 }
 
 @keyframes headerFade {

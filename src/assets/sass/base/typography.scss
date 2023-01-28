@@ -3,6 +3,15 @@
   --font-secondary: "Poppins";
 }
 
+.xxxl {
+  margin-bottom: .5em;
+  font-size: 60px;
+  font-weight: 200;
+  line-height: 1.1;
+  letter-spacing: 1px;
+  color: var(--color-heading)
+}
+
 .xxl {
   margin-bottom: .5em;
   font-size: 40px;
@@ -104,6 +113,10 @@ strong {
 }
 
 @media(min-width:767px) {
+  .xxl {
+    font-size: 90px
+  }
+
   .xxl {
     font-size: 60px
   }

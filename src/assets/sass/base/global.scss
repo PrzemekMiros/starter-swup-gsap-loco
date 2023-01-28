@@ -3,21 +3,18 @@
   --bs-gutter-y: 25px;
 }
 
-html {
-  background-color: var(--color-light-1) 
-}
-
 body {
     margin: 0;
     padding: 0;
+
     color: var(--color-text);
     font-family: var(--font-primary)
   }
 
-  main {
-    background-color: var(--color-light-1)
+  .scrollContainer {
+    background-color: var(--color-light-1);
   }
-  
+
   img {
     display: block;
     width: 100%;
