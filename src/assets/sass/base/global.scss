@@ -117,9 +117,16 @@ body {
   }
 }
 
-.archive-post-link {
+.link-arrow {
+  display: inline-block;
   font-size: 20px;
   font-weight: 300
+}
+.link-arrow svg {
+  transition: .3s cubic-bezier(.79,0,.07,.88)
+}
+.link-arrow:hover svg {
+  transform: rotate(45deg)
 }
 
 /*  Line

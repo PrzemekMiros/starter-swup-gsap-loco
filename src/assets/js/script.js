@@ -200,13 +200,23 @@ gsap.from(".logo-line-3", {
 
 tlintro = gsap.timeline();
 
+if (window.matchMedia("(min-width: 767px)").matches) {
 tlintro.from(".logo-wrap", {
   y: "28vh",
-  x: "70%",
-  width: "34vw",
+  x: "61%",
+  width: "540%",
   delay: 2,
   duration: 1
 });
+} else {
+  tlintro.from(".logo-wrap", {
+    y: "28vh",
+    x: "4%",
+    width: "540%",
+    delay: 2,
+    duration: 1
+  });
+}
 
 
 
