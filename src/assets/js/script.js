@@ -76,6 +76,16 @@ lineX.forEach(lineXItem => {
 })
 });
 
+gsap.from(".footer-parallax", {
+  y: "-25%",
+  scrollTrigger: {
+    scroller: ".scrollContainer",
+    trigger: ".site-footer",
+    start: "top 90%",
+    scrub: true
+  }
+})
+
 const menuToggle = document.getElementById("menuToggle");
 
 const menuBar = gsap.timeline();
@@ -112,10 +122,10 @@ tl.from('.menu-bg span', {
 
 tl.from('.main-menu li a', {
 	duration:1.5,
-	y:"100%",
+	y:"110%",
 	stagger: 0.2,
 	ease: 'Expo.easeInOut'
-} , "-=0.5");
+} , "-=0.2");
 
 tl.from('.social-links li', {
 	duration:1,
@@ -123,7 +133,7 @@ tl.from('.social-links li', {
 	opacity:0,
 	stagger: 0.1,
 	ease: 'Expo.easeInOut'
-} , "-=0.5");
+} , "-=0.2");
 
 tl.reverse();
 
@@ -163,7 +173,6 @@ if (window.matchMedia("(min-width: 767px)").matches) {
 
 
 // Intro
-/*
 gsap.from(".scrollContainer", {
   autoAlpha: 0,
   opacity: 0,
@@ -219,7 +228,7 @@ tlintro.from(".logo-wrap", {
   delay: 2,
   duration: 1
 });
-*/
+
 
 
 

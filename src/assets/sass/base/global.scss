@@ -29,6 +29,30 @@ body {
     color: inherit
   }
 
+  .link {
+    position: relative;
+    display: inline-block
+  }
+
+  .link::before {
+    position: absolute;
+    content: "";
+    bottom: -1px;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: var(--color-text);
+    transition: .3s ease-in-out;
+  }
+
+  .link:hover::before {
+    width: 100%;
+  }
+
+  .link-white::before {
+    background-color: #fff
+  }
+
   ul, li {
     padding-left: 0;
     list-style: none
@@ -86,7 +110,7 @@ body {
 
 
 @media(min-width:767px) {
-  .works-1 .works-grid div:nth-child(even) {
+  .works-grid .works-grid-item:nth-child(even) {
     margin-top: -6em;
     width: 33.3%
   }

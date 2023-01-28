@@ -2,10 +2,6 @@
 layout: layouts/works.njk
 title: Realizacje
 description: Zobacz moje ostatnie realizacje stron, sklepów i serwisów internetowych
-pagination: 
-    data: collections.works
-    size: 6
-    alias: works
 ---
 
 <div class="row gx-0 pb-medium">
@@ -17,9 +13,9 @@ pagination:
   </div>
 </div>
 
-<div class="row gx-0">
+<div class="row gx-0 works-grid pt-medium">
     {% for post in collections.works %}
-    <div class="offset-md-1 col-md-5 fadeIn">
+    <div class="offset-md-1 col-md-5 works-grid-item fadeIn">
         <a href="{{ post.url }}">
             <div class="archive-post pb-medium">
               <div class="parallax-wrap aspect_16-12">
@@ -31,9 +27,6 @@ pagination:
                 <h2 class="archive-post-title h4 mt-0">
                     {{ post.data.title }}
                 </h2>
-                <p class="archive-post-date mt-4 mb-4"> 
-                    <small>{{ post.data.description}}</small> 
-                </p>
                 <a href="{{ post.data.link}}" class="archive-post-link mt-5 mb-2"> 
                     Zobacz online 
                     <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -45,19 +38,4 @@ pagination:
         </a>
     </div>
     {% endfor %}
-</div>
-
-<div class="row gx-0 pb-large">
-<div class="offset-md-1 col-md-5">
-<nav>
-    <ul class="pagination d-flex fadeIn">
-        {%- for pageEntry in pagination.pages %}
-        <li class="pagination-item">
-            <a class="pagination-link" href="{{ pagination.hrefs[ loop.index0 ] }}"
-                {% if page.url == pagination.hrefs[ loop.index0 ] %} aria-current="active"
-                {% endif %}>{{ loop.index }}</a></li>
-        {%- endfor %}
-    </ul>
-</nav>
-</div>
 </div>

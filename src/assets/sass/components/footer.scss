@@ -4,22 +4,19 @@
     background-position: center;
 }
 
-.footer-top {
-    padding: 140px 0 110px
-}
-
-.footer-top p {
+.site-footer p,
+.site-footer a {
     color: #fff
 }
 
-.footer-list li {
-    list-style: none;
-    padding-left: 0;
-    margin-bottom: .8em;
-    font-size: 15px;
-    font-weight: 200;
-    color: rgb(199, 199, 199);
+.footer-top {
+    padding: 210px 0 20px
 }
+
+.footer-bottom {
+    padding: 0 0 30px;
+}
+
 
 @media(min-width:767px) {
     .footer-list li {
