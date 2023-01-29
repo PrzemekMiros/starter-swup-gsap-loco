@@ -2,13 +2,13 @@ const eleventyPluginFilesMinifier = require("@sherby/eleventy-plugin-files-minif
 
 module.exports = function(eleventyConfig) {
 
-    eleventyConfig.addPlugin(eleventyPluginFilesMinifier);
+    eleventyConfig.addPassthroughCopy("src/assets/css");
+    eleventyConfig.addPassthroughCopy("src/assets/js");
+    eleventyConfig.addPassthroughCopy("src/assets/img");
+    eleventyConfig.addPassthroughCopy("src/assets/fonts");
+    eleventyConfig.addWatchTarget("src/assets/sass");
 
-    eleventyConfig.addPassthroughCopy("./src/assets/css");
-    eleventyConfig.addPassthroughCopy("./src/assets/js");
-    eleventyConfig.addPassthroughCopy("./src/assets/img");
-    eleventyConfig.addPassthroughCopy("./src/assets/fonts");
-    eleventyConfig.addWatchTarget("./src/assets/sass");
+    eleventyConfig.addPlugin(eleventyPluginFilesMinifier);
 
     // Date
     eleventyConfig.addFilter('dateDisplay', require('./src/filters/date-display.js'));
